@@ -1,5 +1,7 @@
 '''
-                ### Script that generate a key KSA###
+        ### Script that generates and verifies digit security module 11###
+          Algorithm used to generate and verify numbers of security
+        documents such as checks among others (CMC7) as CPF in Brazil.
             Implentation of the algorithm by Felipe Ramos
     
     Permission is hereby granted, free of charge, to any person obtaining a
