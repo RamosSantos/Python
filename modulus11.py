@@ -1,5 +1,5 @@
 '''
-        ### Script that generates and verifies digit security module 11###
+        ### Script that generates and verifies digit security modulus 11###
           Algorithm used to generate and verify numbers of security
         documents such as checks among others (CMC7) as CPF in Brazil.
             Implentation of the algorithm by Felipe Ramos
@@ -29,13 +29,13 @@ def SendNumber(a):
         b[i]=int(a[i])#Distributes a letter to each position vector
     return b
 
-def module11(b):
+def modulus11(b):
     mod=[11,10,9,8,7,6,5,4,3,2]
     aux=0
     for i in range(len(b)):
         result=b[i]*mod[i]#First char * last position in the vector
         aux+=result
-    verificator=aux%11#Rules of module11
+    verificator=aux%11#Rules of modulus 11
     verificator=11-verificator
     return print(verificator)
 
@@ -43,7 +43,7 @@ if __name__=='__main__':
 
     l=input("Digite:")
     l=SendNumber(l)
-    module11(l)
+    modulus11(l)
     
 
     
